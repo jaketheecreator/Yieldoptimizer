@@ -1,0 +1,19 @@
+{
+  "experimental": {
+    "mcp": {
+      "enabled": true,
+      "figma": {
+        "enabled": true,
+        "designTokens": true,
+        "componentGeneration": true,
+        "tailwindIntegration": true,
+        "figmaFile": "https://www.figma.com/file/khJ3dr3pyTcBpRWQFSr9Ke/Sperax-Dapp---New-Strategy"
+      }
+    }
+  },
+  "project": {
+    "name": "sperax-mobile",
+    "type": "next",
+    "tailwind": true
+  }
+} 

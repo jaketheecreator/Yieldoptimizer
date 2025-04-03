@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply antialiased overflow-x-hidden bg-[#0D1117] text-white;
+  }
+}
+
+@layer components {
+  .mobile-safe-area {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+
+  .vault-card {
+    @apply bg-[#1A202C] rounded-xl p-4 transition-all duration-200
+           hover:ring-1 hover:ring-[#31C1BF]/20;
+  }
+
+  .vault-icon {
+    @apply w-8 h-8 bg-[#31C1BF]/10 rounded-lg flex items-center justify-center;
+  }
+
+  .tag {
+    @apply text-xs text-gray-400 bg-[#2D3748] px-2 py-1 rounded;
+  }
+
+  .btn-connect {
+    @apply bg-[#31C1BF] text-white px-4 py-2 rounded-full text-sm font-medium
+           hover:bg-[#31C1BF]/90 transition-colors duration-200;
+  }
+
+  .btn-menu {
+    @apply text-white hover:text-[#31C1BF] transition-colors duration-200;
+  }
+
+  .nav-link {
+    @apply flex flex-col items-center text-gray-400 hover:text-[#31C1BF]
+           transition-colors duration-200;
+  }
+}
+
+:root {
+  /* Gradients */
+  --gradient-1: linear-gradient(to right, #7C3145, #2992A2); /* Card stroke gradient */
+  --gradient-2: linear-gradient(to right, #08B4DB, #4DFF00); /* APY + SPA gradient */
+
+  /* Existing variables */
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+} 

@@ -1,0 +1,17 @@
+{
+  "experimental": {
+    "mcp": {
+      "enabled": true,
+      "figma": {
+        "enabled": true,
+        "designTokens": true,
+        "componentGeneration": true,
+        "tailwindIntegration": true
+      }
+    }
+  },
+  "tailwind": {
+    "config": "tailwind.config.ts",
+    "css": "src/styles/globals.css"
+  }
+} 

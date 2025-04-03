@@ -1,0 +1,19 @@
+{
+  "experimental": {
+    "mcp": {
+      "enabled": true,
+      "figma": {
+        "enabled": true,
+        "designTokens": true,
+        "componentGeneration": true,
+        "tailwindIntegration": true
+      }
+    }
+  },
+  "editor": {
+    "formatOnSave": true
+  },
+  "terminal": {
+    "integrated": true
+  }
+} 

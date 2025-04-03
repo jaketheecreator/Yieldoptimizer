@@ -1,0 +1,25 @@
+{
+  "version": "0.2",
+  "figma": {
+    "fileId": "khJ3dr3pyTcBpRWQFSr9Ke",
+    "nodeId": "8139-2369",
+    "accessToken": "figd_wbm_28aMD2ktjzAmXeKW4krgD-tCRDwrec_Hcua3",
+    "designTokens": {
+      "colors": true,
+      "typography": true,
+      "spacing": true,
+      "shadows": true,
+      "borderRadius": true
+    },
+    "components": {
+      "output": "src/components/figma",
+      "typescript": true,
+      "tailwind": true,
+      "storybook": false
+    }
+  },
+  "tailwind": {
+    "config": "tailwind.config.ts",
+    "css": "src/styles/globals.css"
+  }
+} 
