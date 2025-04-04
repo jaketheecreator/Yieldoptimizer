@@ -1,9 +1,16 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 export default function NotFound() {
+  const [path, setPath] = useState('');
+  
+  useEffect(() => {
+    // This runs only on the client side
+    setPath(window.location.pathname);
+  }, []);
+  
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-4 text-center">
       <h1 className="text-5xl font-bold mb-6">404 - Page Not Found</h1>
@@ -13,7 +20,7 @@ export default function NotFound() {
       <div className="mb-8">
         <p className="text-[#A4A6A7] mb-2">Debugging Info:</p>
         <p className="text-sm text-[#A4A6A7]">
-          Path: {typeof window !== 'undefined' ? window.location.pathname : ''}
+          Path: {path}
         </p>
       </div>
       <Link 
