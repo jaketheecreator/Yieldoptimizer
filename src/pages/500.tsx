@@ -1,12 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
 
-export default function NotFound() {
+export default function Custom500() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-4 text-center">
-      <h1 className="text-5xl font-bold mb-6">404 - Page Not Found</h1>
+      <h1 className="text-5xl font-bold mb-6">500 - Server Error</h1>
       <p className="text-xl mb-8">
-        The page you are looking for might have been removed or is temporarily unavailable.
+        We apologize for the inconvenience. Something went wrong on our server.
       </p>
       <Link 
         href="/"
