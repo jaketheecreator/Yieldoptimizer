@@ -2,12 +2,15 @@
 const nextConfig = {
   output: 'standalone',
   reactStrictMode: true,
-  // Disable automatic static optimization for error pages
-  // This prevents the pre-rendering that's causing errors
+  // Disable all static optimization to prevent errors during build
   experimental: {
-    // Skip static generation of error pages
-    disableStaticErrorPages: true
-  }
+    // Disable App Router completely to prevent errors
+    appDir: false
+  },
+  // Explicitly tell Next.js to use the Pages Router only
+  useFileSystemPublicRoutes: true,
+  // Completely disable static page generation
+  target: 'server'
 };
 
 module.exports = nextConfig; 
